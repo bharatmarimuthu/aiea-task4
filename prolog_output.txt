@@ -1,0 +1,44 @@
+11 ?- requires_equipment(plank, bodyweight).
+true.
+
+12 ?- targets(plank, chest).
+false.
+
+13 ?- targets(X, glutes).
+X = air_squat ;
+X = barbell_squat ;
+X = romanian_deadlift ;
+X = goblet_squat ;
+X = walking_lunge.
+
+14 ?- compound_exercise(bench_press).
+true ;
+true ;
+true ;
+true ;
+true ;
+true ;
+false.
+
+15 ?- compound_exercise(bicep_curl).
+false.
+
+16 ?- muscle_workout(chest, dumbbell, X).
+X = dumbbell_flye ;
+false.
+
+17 ?- possible_exercises(X, [dumbbell, bodyweight]).
+X = dumbbell_flye ;
+X = bicep_curl ;
+X = push_up ;
+X = air_squat ;
+X = plank ;
+X = goblet_squat ;
+X = walking_lunge ;
+false.
+
+18 ?- setof(X, compound_exercise(X), L), write(L).
+[air_squat,barbell_squat,bench_press,goblet_squat,overhead_press,pull_up,push_up,romanian_deadlift,tricep_dip,walking_lunge]
+L = [air_squat, barbell_squat, bench_press, goblet_squat, overhead_press, pull_up, push_up, romanian_deadlift, tricep_dip|…].
+
+19 ?- halt.

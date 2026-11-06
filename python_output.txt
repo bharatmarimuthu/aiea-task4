@@ -1,0 +1,22 @@
+plank uses bodyweight: True
+plank targets chest: False
+bench press is a compound exercise: True
+bicep curl is a compound exercise: False
+targets glutes:
+   air_squat
+   barbell_squat
+   romanian_deadlift
+   goblet_squat
+   walking_lunge
+exercise that targets chest using dumbbells:
+   dumbbell_flye
+possible exercises with dumbbells and bodyweight:
+   dumbbell_flye
+   bicep_curl
+   push_up
+   air_squat
+   plank
+   goblet_squat
+   walking_lunge
+compound: ['air_squat', 'barbell_squat', 'bench_press', 'goblet_squat', 'overhead_press', 'pull_up', 'push_up', 'romanian_deadlift', 'tricep_dip', 'walking_lunge']
+bench press proofs: 6
