@@ -11,25 +11,6 @@ A small Prolog knowledge base that models gym exercises, the equipment each one 
 | `prolog_output.txt` | Output of the queries run directly in SWI-Prolog |
 | `python_output.txt` | Output of `run_queries.py` |
 
-## How to run
-
-**Prolog** (requires [SWI-Prolog](https://www.swi-prolog.org/)):
-
-```bash
-swipl kb.pl
-```
-
-Then enter queries at the `?-` prompt, for example `targets(X, glutes).`
-
-**Python** (requires SWI-Prolog to be installed first):
-
-```bash
-pip install janus-swi
-python run_queries.py
-```
-
-Tested with SWI-Prolog 10.0.2, janus-swi 1.5.3, and Python 3.14.
-
 ## Rules
 
 - `compound_exercise(Exercise)`: true if the exercise targets at least two different muscle groups.
